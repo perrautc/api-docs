@@ -1,19 +1,19 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
+  title: 'DealCloud Developer Hub',
+  tagline: 'DealCloud – Not Just a CRM: All-Inclusive Financial Services Software',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'perrautc', // Usually your GitHub org/user name.
+  projectName: 'api-docs', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'My Site',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'DealCloud Logo',
+        src: 'img/logo.png',
       },
       items: [
         {
@@ -22,9 +22,9 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        { to: 'blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/perrautc/api-docs',
           label: 'GitHub',
           position: 'right',
         },
@@ -34,31 +34,47 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Guides',
           items: [
             {
-              label: 'Style Guide',
+              label: 'Getting Started',
               to: 'docs/',
             },
             {
-              label: 'Second Doc',
+              label: 'Samples',
+              to: 'docs/doc2/',
+            },
+            {
+              label: 'SDKs',
+              to: 'docs/doc2/',
+            },
+            {
+              label: 'REST APIs',
               to: 'docs/doc2/',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Docs',
           items: [
             {
-              label: 'Stack Overflow',
+              label: 'Authentication',
               href: 'https://stackoverflow.com/questions/tagged/docusaurus',
             },
             {
-              label: 'Discord',
+              label: 'Data',
               href: 'https://discordapp.com/invite/docusaurus',
             },
             {
-              label: 'Twitter',
+              label: 'Schema',
+              href: 'https://twitter.com/docusaurus',
+            },
+            {
+              label: 'User Management',
+              href: 'https://twitter.com/docusaurus',
+            },
+            {
+              label: 'Marketing',
               href: 'https://twitter.com/docusaurus',
             },
           ],
@@ -72,12 +88,12 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/perrautc/api-docs',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Intapp, Inc.`,
     },
   },
   presets: [
@@ -88,13 +104,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/perrautc/api-docs/edit/main/dealcloud/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/perrautc/api-docs/edit/main/dealcloud/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

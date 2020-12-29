@@ -1,10 +1,9 @@
 ---
-id: doc1
-title: Style Guide
-sidebar_label: Style Guide
+id: schema
+title: Schema v4.1.0
+sidebar_label: Schema
 slug: /
 ---
-
 You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).
 
 ## Markdown Syntax
@@ -42,11 +41,11 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 ## Lists
 
 1. First ordered list item
-1. Another item
+2. Another item
    - Unordered sub-list.
-1. Actual numbers don't matter, just that it's a number
+3. Actual numbers don't matter, just that it's a number
    1. Ordered sub-list
-1. And another item.
+4. And another item.
 
 * Unordered list can use asterisks
 
@@ -68,13 +67,9 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 Or leave it empty and use the [link text itself].
 
-URLs and URLs in angle brackets will automatically get turned into links. http://www.example.com/ or <http://www.example.com/> and sometimes example.com (but not on GitHub, for example).
+URLs and URLs in angle brackets will automatically get turned into links. http://www.example.com/ or [http://www.example.com/](http://www.example.com/) and sometimes example.com (but not on GitHub, for example).
 
 Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.mozilla.org/
-[1]: http://slashdot.org/
-[link text itself]: http://www.reddit.com/
 
 ---
 
@@ -82,11 +77,9 @@ Some text to show that the reference links can follow later.
 
 Here's our logo (hover to see the title text):
 
-Inline-style: ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 1')
+Inline-style: ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
-Reference-style: ![alt text][logo]
-
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 2'
+Reference-style: ![alt text][logo]"Logo Title Text 2"
 
 Images from any folder can be used by providing path to file. Path should be relative to markdown file.
 
@@ -123,6 +116,7 @@ function highlightMe() {
 
 Colons can be used to align columns.
 
+
 | Tables        |      Are      |   Cool |
 | ------------- | :-----------: | -----: |
 | col 3 is      | right-aligned | \$1600 |
@@ -130,6 +124,7 @@ Colons can be used to align columns.
 | zebra stripes |   are neat    |    \$1 |
 
 There must be at least 3 dashes separating each header cell. The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.
+
 
 | Markdown | Less      | Pretty     |
 | -------- | --------- | ---------- |
@@ -154,7 +149,7 @@ Quote break.
   <dt>Definition list</dt>
   <dd>Is something people use sometimes.</dd>
 
-  <dt>Markdown in HTML</dt>
+<dt>Markdown in HTML</dt>
   <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
 </dl>
 
@@ -201,3 +196,8 @@ This is a caution
 This is a warning
 
 :::
+
+[arbitrary case-insensitive reference text]: https://www.mozilla.org/
+[1]: http://slashdot.org/
+[link text itself]: http://www.reddit.com/
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png
